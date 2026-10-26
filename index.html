@@ -4,14 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex">
-<!-- 10/31公開のとき上のnoindexの行を消す。2026-10-26 12:35 黒田：題名・画像の大きさ・見出しの隠れ・下のLINEアイコンの色を直した。13:40 黒田：top・values・greetingをモコの軽量版（軽量_*.webp）に差し替え。14:13 黒田：公式LINEのURL（lin.ee/GaQpPAA・太山さん確認済み）を入れた。14:37 黒田：画像を英字名に統一（top/values/greeting.webp・top_clark.jpg、No1772） -->
 <title>TAITAIサポート｜フィリピン・クラークのお困りごと相談</title>
 <meta name="description" content="フィリピンのお困りごとに、頼れるアドバイザー。事業進出、視察・研修、通訳・現地とのやり取り、市場調査、不動産売却、人とのトラブルのご相談。個人の方も、個人事業主・企業の方も。TAITAIサポート株式会社。">
 <meta property="og:title" content="TAITAIサポート｜フィリピンのお困りごとに、頼れるアドバイザー。">
 <meta property="og:description" content="事業進出、視察・研修、通訳・現地とのやり取り、市場調査、不動産売却、人とのトラブルのご相談。">
 <meta property="og:type" content="website">
 <style>
-/* 公開用 途中版 2026-10-26 黒田（外部読み込みなし・画像は images/ に置く）。元：太山さんのCanva「TAITAIサポート｜ホームページ案｜2026-10-21 20:07」のスクショに合わせた携帯版（2026-10-26 黒田） */
+
 :root{
   --blue:#1A56D6; --blue-d:#1446B4; --navy:#1E2A4A; --gray:#5A6478;
   --pale:#EEF4FB; --pill:#EAF0F8; --blob:#DCE8F6; --white:#fff;
@@ -32,7 +31,7 @@ br.pc{display:none}
 @media (min-width:760px){br.pc{display:inline}}
 a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 
-/* ボタン（LINE） */
+
 .btn{display:inline-flex;align-items:center;gap:12px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:.98rem;padding:9px 22px 9px 9px;border-radius:999px;box-shadow:0 6px 16px rgba(26,86,214,.28)}
 .btn .ln{width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
 .btn .ln svg{width:22px;height:22px}
@@ -45,7 +44,7 @@ a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 .btn.white .ln svg text{fill:#06C755}
 section[id]{scroll-margin-top:72px}
 
-/* 写真（Canvaの丸い形） */
+
 .ph{position:relative;isolation:isolate}
 .ph::before{content:"";position:absolute;inset:-6% -8% -8% -4%;background:var(--blob);border-radius:62% 38% 55% 45%/48% 58% 42% 52%;z-index:-1;opacity:.7}
 .ph .img{overflow:hidden;border-radius:58% 42% 50% 50%/46% 54% 46% 54%}
@@ -56,7 +55,7 @@ section[id]{scroll-margin-top:72px}
 .ph.b2 .img{border-radius:46% 54% 42% 58%/58% 44% 56% 42%}
 .ph.b3 .img{border-radius:50% 50% 56% 44%/40% 60% 40% 60%}
 
-/* ヘッダー */
+
 header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
 .logo img{height:30px;width:auto}
@@ -66,7 +65,7 @@ header .btn{font-size:.82rem;padding:5px 16px 5px 5px;gap:8px;box-shadow:none}
 header .btn .ln{width:26px;height:26px}
 header .btn .ln svg{width:17px;height:17px}
 
-/* ヒーロー */
+
 .hero{position:relative;overflow:hidden;padding:26px 0 48px}
 
 .hero .grid{display:grid;gap:26px}
@@ -76,7 +75,7 @@ header .btn .ln svg{width:17px;height:17px}
 .hero .ph{width:78%;margin:0 0 0 auto;aspect-ratio:1/1}
 .hero .ph .img{height:100%}
 
-/* ご相談いただけること */
+
 .topics{padding:0 0 48px}
 .list{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}
 .item{display:flex;align-items:center;gap:14px;background:var(--pill);border-radius:999px;padding:7px 18px 7px 7px;min-height:60px}
@@ -84,7 +83,7 @@ header .btn .ln svg{width:17px;height:17px}
 .item .ic svg{width:26px;height:26px;fill:var(--blue)}
 .item h3{font-size:.97rem;font-weight:700}
 
-/* 調べる。整理する。 */
+
 .panel{background:var(--pale);border-radius:22px;padding:30px 20px 28px}
 .steps-sec{padding-bottom:48px}
 .steps-sec .top{display:grid;gap:24px}
@@ -97,7 +96,7 @@ header .btn .ln svg{width:17px;height:17px}
 .step svg{width:30px;height:30px;fill:var(--blue)}
 .step h3{font-size:.88rem;font-weight:700;line-height:1.45}
 
-/* 大切にしていること */
+
 .values{padding:0 0 48px}
 .values .grid{display:grid;gap:26px}
 .values .ph{width:86%;aspect-ratio:1.35/1}
@@ -106,7 +105,7 @@ header .btn .ln svg{width:17px;height:17px}
 .values .big{color:var(--blue);font-size:1.45rem;font-weight:700;line-height:1.5;margin-top:16px}
 .values .lead{margin-top:10px}
 
-/* ご挨拶 */
+
 .greet{padding-bottom:48px}
 .greet .grid{display:grid;gap:24px}
 .greet h2{font-size:1.15rem}
@@ -115,7 +114,7 @@ header .btn .ln svg{width:17px;height:17px}
 .greet .ph{width:70%;margin-left:auto;aspect-ratio:1/1}
 .greet .ph .img{height:100%}
 
-/* 料金 */
+
 .fee{padding:0 0 48px}
 .fee .grid{display:grid;gap:22px}
 .fee .ph{width:84%;margin:0 auto;aspect-ratio:1.9/1}
@@ -123,13 +122,13 @@ header .btn .ln svg{width:17px;height:17px}
 .fee h2{font-size:1.15rem}
 .fee .lead{margin-top:10px}
 
-/* 青い帯 */
+
 .band{position:relative;color:#fff;text-align:center;padding:48px 18px 52px;overflow:hidden;background:var(--blue)}
 .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,86,214,.55),rgba(20,70,180,.85))}
 .band .in{position:relative;z-index:1;display:grid;justify-items:center;gap:22px}
 .band h2{font-size:1.3rem;color:#fff}
 
-/* フッター */
+
 footer{padding:30px 0 34px}
 footer .grid{display:grid;gap:20px}
 footer .logo img{height:28px}
@@ -140,7 +139,7 @@ footer dd{margin:6px 0 0;font-size:.86rem;color:var(--gray);line-height:1.7}
 footer .copy{margin-top:26px;font-size:.72rem;color:var(--gray)}
 footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
 
-/* よくある質問（2026-10-26 黒田・ニコNo1825） */
+
 .faq{padding:0 0 48px}
 .faq .qa{margin-top:22px;display:grid;gap:10px}
 .faq details{background:var(--pill);border-radius:18px;padding:0 18px}
@@ -151,7 +150,7 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
 .faq details p{color:var(--gray);font-size:.92rem;line-height:1.9;padding:0 0 16px}
 .faq details a{color:var(--blue);word-break:break-all}
 
-/* PC（あとで仕上げる。今は崩れない程度） */
+
 @media (min-width:760px){
   body{font-size:16px}
   nav a.n{display:inline}
@@ -194,7 +193,6 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
         <p class="sub">個人の方も、個人事業主・企業の方も。</p>
         <div class="cta"><a class="btn line-link" href="#line"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>詳しくは公式LINEへ<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </div>
-      <!-- 太山さんが「top_clark.jpg」（クラーク）を選んだら src を images/top_clark.jpg・width="1600" height="1200"・alt を「クラークのパレードグラウンド」にし、下の footer の写真クレジット行のコメントを外す -->
       <div class="ph cut"><img src="images/top.webp" alt="フィリピンの街並み（教会とジプニー）" width="640" height="696"></div>
     </div>
   </section>
@@ -268,16 +266,12 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
     </div>
   </section>
 
-  <!-- よくある質問：2026-10-26 黒田（下書き「よくある質問（会社全体）」のQ1・2・3・4・7・9・14・17）。公開は太山さんのOK後 -->
   <section class="faq" id="faq">
     <div class="wrap">
       <h2>よくある質問<span class="bar"></span></h2>
       <div class="qa">
         <details><summary>どんなことを相談できますか？</summary><p>フィリピンにお持ちの不動産の売却・管理・書類・現地との連絡、フィリピンでの会社設立や事業の始め方、会社の研修のご相談などです。まずはお困りごとを一言お聞かせください。</p></details>
         <details><summary>相談はどこからできますか？</summary><p><a class="line-link" href="https://lin.ee/GaQpPAA">公式LINE</a>からお送りください。内容を確かめて担当からご連絡します。</p></details>
-        <!-- Q3：初回Zoom無料・目安30分は太山さんのOK待ち（【要確認】）。OKが出たら、このコメントの始めと「Q3ここまで」の行の終わりの記号を外す
-        <details><summary>初回の相談にお金はかかりますか？</summary><p>初回のZoom（目安30分）は無料で、お困りごとを伺い、進め方をご説明します。</p></details>
-        Q3ここまで -->
         <details><summary>その後の相談や手続きの費用は？</summary><p>内容によって変わります。始める前に、内容・費用・条件をご説明し、ご了承いただいてから進めます。</p></details>
         <details><summary>SMDCの物件を新しく買えますか？</summary><p>SMDCの新規販売は終了しています。すでにご購入のお客様のお世話は続けています。</p></details>
         <details><summary>物件を売りたいです。</summary><p>ご希望とお困りのことをお聞かせください。手続きと費用を整理してご案内します。売れる時期や価格はお約束できません。</p></details>
@@ -307,9 +301,7 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
     </dl>
   </div>
   <div class="wrap"><p class="copy">© TAITAI SUPPORT Co., Ltd.</p>
-  <!-- top_clark.jpg を使うときだけ下のコメントを外す（CC BY-SA 4.0 は表記が必須）
-  <p class="credit">写真：Ralff Nestor Nacor／Wikimedia Commons（CC BY-SA 4.0）</p>
-  --></div>
+</div>
 </footer>
 
 <script>
