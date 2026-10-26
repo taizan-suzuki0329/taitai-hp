@@ -282,6 +282,14 @@ footer .credit a{color:var(--gray)}
  .gets{grid-template-columns:repeat(3,1fr)}
  .gets li{flex-direction:column}
 }
+
+.cases{padding:0 0 40px}
+.caselist{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}
+.caselist li{background:var(--pale);border-radius:16px;padding:14px 16px}
+.c-q{font-weight:700;font-size:.98rem;color:var(--navy)}
+.c-q::before{content:"相談";display:inline-block;font-size:.72rem;color:#fff;background:var(--blue);border-radius:6px;padding:1px 7px;margin-right:8px;vertical-align:2px}
+.c-a{font-size:.92rem;color:var(--gray);line-height:1.8;margin-top:6px}
+@media(min-width:760px){.caselist{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -291,6 +299,7 @@ footer .credit a{color:var(--gray)}
     <a class="logo" href="#top" aria-label="TAITAI SUPPORT トップへ"><img src="images/logo.png" alt="TAITAI SUPPORT" width="640" height="146"></a>
     <nav>
       <a class="n" href="#cats">お困りごと</a>
+      <a class="n" href="#cases">ご相談の例</a>
       <a class="n" href="#fee">初回相談</a>
       <a class="n" href="#faq">よくある質問</a>
       <a class="hdr-btn line-link" href="https://lin.ee/GaQpPAA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/></svg><span>LINEで相談</span></a>
@@ -332,6 +341,20 @@ footer .credit a{color:var(--gray)}
         <details class="cat"><summary>その他、人には言いづらい困りごと</summary><p>まずは差し支えない範囲で、概要をお聞かせください。どこから手をつければいいかを一緒に考えます。</p><a class="cta-btn small line-link" href="https://lin.ee/GaQpPAA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/></svg><span>このことをLINEで相談する</span></a></details>
       </div>
       <p class="bought">すでに物件をご購入の方の手続き（お支払い・書類など）も、公式LINEで受け付けています。</p>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="wrap">
+      <h2>これまでのご相談の例<span class="bar"></span></h2>
+      <p class="lead" style="margin-top:10px">実際にお受けしたご相談を、内容が分からない形でご紹介します。</p>
+      <ul class="caselist">
+        <li><p class="c-q">フィリピンで店舗の事業を始めたい</p><p class="c-a">現地での会社の作り方、物件の使い方、人の雇い方を整理し、事業の段取りを一緒に組み立てました。</p></li>
+        <li><p class="c-q">社員研修をフィリピンで行いたい</p><p class="c-a">目的・人数・時期をうかがい、現地研修と視察の行程を組み、現地の施設とのやり取りを担当しました。</p></li>
+        <li><p class="c-q">フィリピンの物件を売りたい</p><p class="c-a">契約書類と支払いの状況を整理し、売却の進め方と、かかる費用の考え方をご案内しました。</p></li>
+        <li><p class="c-q">現地の銀行口座を開きたい</p><p class="c-a">必要な書類と手続きの流れを整理し、現地の銀行とのやり取りをお手伝いしました。</p></li>
+        <li><p class="c-q">購入後の支払い・名義の手続きが不安</p><p class="c-a">現地の会社との連絡を引き受け、書類の確認と期限の管理をお手伝いしています。</p></li>
+      </ul>
     </div>
   </section>
 
