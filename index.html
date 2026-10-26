@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<!-- 10/31公開のとき上のnoindexの行を消す。2026-10-26 12:35 黒田：題名・画像の大きさ・見出しの隠れ・下のLINEアイコンの色を直した。13:40 黒田：top・values・greetingをモコの軽量版（軽量_*.webp）に差し替え。14:13 黒田：公式LINEのURL（lin.ee/GaQpPAA・太山さん確認済み）を入れた。14:37 黒田：画像を英字名に統一（top/values/greeting.webp・top_clark.jpg、No1772） -->
+<title>TAITAIサポート｜フィリピン・クラークのお困りごと相談</title>
+<meta name="description" content="フィリピンのお困りごとに、頼れるアドバイザー。事業進出、視察・研修、通訳・現地とのやり取り、市場調査、不動産売却、人とのトラブルのご相談。個人の方も、個人事業主・企業の方も。TAITAIサポート株式会社。">
+<meta property="og:title" content="TAITAIサポート｜フィリピンのお困りごとに、頼れるアドバイザー。">
+<meta property="og:description" content="事業進出、視察・研修、通訳・現地とのやり取り、市場調査、不動産売却、人とのトラブルのご相談。">
+<meta property="og:type" content="website">
+<style>
+/* 公開用 途中版 2026-10-26 黒田（外部読み込みなし・画像は images/ に置く）。元：太山さんのCanva「TAITAIサポート｜ホームページ案｜2026-10-21 20:07」のスクショに合わせた携帯版（2026-10-26 黒田） */
+:root{
+  --blue:#1A56D6; --blue-d:#1446B4; --navy:#1E2A4A; --gray:#5A6478;
+  --pale:#EEF4FB; --pill:#EAF0F8; --blob:#DCE8F6; --white:#fff;
+  --font:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--navy);font-family:var(--font);font-size:15px;line-height:1.85}
+img{display:block;max-width:100%}
+main,footer{overflow-x:clip}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3,p{margin:0}
+h2{font-size:1.22rem;font-weight:700;line-height:1.55;letter-spacing:.02em}
+.bar{display:block;width:30px;height:3px;border-radius:2px;background:var(--blue);margin-top:10px}
+.lead{color:var(--gray);font-size:.92rem;line-height:1.9}
+br.pc{display:none}
+@media (min-width:760px){br.pc{display:inline}}
+a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+
+/* ボタン（LINE） */
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:.98rem;padding:9px 22px 9px 9px;border-radius:999px;box-shadow:0 6px 16px rgba(26,86,214,.28)}
+.btn .ln{width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
+.btn .ln svg{width:22px;height:22px}
+.btn .ar{width:18px;height:18px;margin-left:4px}
+.btn:hover{background:var(--blue-d)}
+.btn.white{background:#fff;color:var(--blue);box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.btn.white .ln{background:var(--blue)}
+.btn.white .ln{background:#06C755}
+.btn.white .ln svg path{fill:#fff}
+.btn.white .ln svg text{fill:#06C755}
+section[id]{scroll-margin-top:72px}
+
+/* 写真（Canvaの丸い形） */
+.ph{position:relative;isolation:isolate}
+.ph::before{content:"";position:absolute;inset:-6% -8% -8% -4%;background:var(--blob);border-radius:62% 38% 55% 45%/48% 58% 42% 52%;z-index:-1;opacity:.7}
+.ph .img{overflow:hidden;border-radius:58% 42% 50% 50%/46% 54% 46% 54%}
+.ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.12)}
+.ph.cut{aspect-ratio:auto!important}
+.ph.cut::before{display:none}
+.ph.cut img{transform:none;height:auto}
+.ph.b2 .img{border-radius:46% 54% 42% 58%/58% 44% 56% 42%}
+.ph.b3 .img{border-radius:50% 50% 56% 44%/40% 60% 40% 60%}
+
+/* ヘッダー */
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+.logo img{height:30px;width:auto}
+nav{display:flex;align-items:center;gap:22px}
+nav a.n{display:none;color:var(--navy);text-decoration:none;font-size:.9rem;font-weight:500}
+header .btn{font-size:.82rem;padding:5px 16px 5px 5px;gap:8px;box-shadow:none}
+header .btn .ln{width:26px;height:26px}
+header .btn .ln svg{width:17px;height:17px}
+
+/* ヒーロー */
+.hero{position:relative;overflow:hidden;padding:26px 0 48px}
+
+.hero .grid{display:grid;gap:26px}
+.hero h1{color:var(--blue);font-size:1.62rem;font-weight:700;line-height:1.5;letter-spacing:.02em}
+.hero .sub{font-weight:500;font-size:.95rem;margin-top:14px;color:var(--navy)}
+.hero .cta{margin-top:22px}
+.hero .ph{width:78%;margin:0 0 0 auto;aspect-ratio:1/1}
+.hero .ph .img{height:100%}
+
+/* ご相談いただけること */
+.topics{padding:0 0 48px}
+.list{display:grid;grid-template-columns:1fr;gap:10px;margin-top:22px}
+.item{display:flex;align-items:center;gap:14px;background:var(--pill);border-radius:999px;padding:7px 18px 7px 7px;min-height:60px}
+.item .ic{width:50px;height:50px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none;box-shadow:0 2px 8px rgba(30,42,74,.06)}
+.item .ic svg{width:26px;height:26px;fill:var(--blue)}
+.item h3{font-size:.97rem;font-weight:700}
+
+/* 調べる。整理する。 */
+.panel{background:var(--pale);border-radius:22px;padding:30px 20px 28px}
+.steps-sec{padding-bottom:48px}
+.steps-sec .top{display:grid;gap:24px}
+.steps-sec .txt{display:grid;gap:14px}
+.steps-sec .ph{width:82%;margin:0 auto;aspect-ratio:1.25/1}
+.steps-sec .ph .img{height:100%}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:20px 14px;margin-top:30px;list-style:none;padding:0}
+.step{position:relative;background:#fff;border-radius:50% 50% 46% 54%/56% 52% 48% 44%;padding:30px 8px 18px;text-align:center;display:grid;justify-items:center;gap:6px}
+.step .no{position:absolute;top:-10px;left:10px;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:.78rem;display:grid;place-items:center}
+.step svg{width:30px;height:30px;fill:var(--blue)}
+.step h3{font-size:.88rem;font-weight:700;line-height:1.45}
+
+/* 大切にしていること */
+.values{padding:0 0 48px}
+.values .grid{display:grid;gap:26px}
+.values .ph{width:86%;aspect-ratio:1.35/1}
+.values .ph .img{height:100%}
+.values h2{font-size:1rem}
+.values .big{color:var(--blue);font-size:1.45rem;font-weight:700;line-height:1.5;margin-top:16px}
+.values .lead{margin-top:10px}
+
+/* ご挨拶 */
+.greet{padding-bottom:48px}
+.greet .grid{display:grid;gap:24px}
+.greet h2{font-size:1.15rem}
+.greet .lead{margin-top:14px}
+.greet .sign{font-weight:700;margin-top:16px;font-size:.95rem}
+.greet .ph{width:70%;margin-left:auto;aspect-ratio:1/1}
+.greet .ph .img{height:100%}
+
+/* 料金 */
+.fee{padding:0 0 48px}
+.fee .grid{display:grid;gap:22px}
+.fee .ph{width:84%;margin:0 auto;aspect-ratio:1.9/1}
+.fee .ph .img{height:100%}
+.fee h2{font-size:1.15rem}
+.fee .lead{margin-top:10px}
+
+/* 青い帯 */
+.band{position:relative;color:#fff;text-align:center;padding:48px 18px 52px;overflow:hidden;background:var(--blue)}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,86,214,.55),rgba(20,70,180,.85))}
+.band .in{position:relative;z-index:1;display:grid;justify-items:center;gap:22px}
+.band h2{font-size:1.3rem;color:#fff}
+
+/* フッター */
+footer{padding:30px 0 34px}
+footer .grid{display:grid;gap:20px}
+footer .logo img{height:28px}
+footer dl{margin:0;display:grid;gap:14px}
+footer dt{font-size:.78rem;font-weight:700;color:var(--navy)}
+footer dt::after{content:"";display:block;width:22px;height:2px;background:var(--blue);margin-top:5px}
+footer dd{margin:6px 0 0;font-size:.86rem;color:var(--gray);line-height:1.7}
+footer .copy{margin-top:26px;font-size:.72rem;color:var(--gray)}
+footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
+
+/* PC（あとで仕上げる。今は崩れない程度） */
+@media (min-width:760px){
+  body{font-size:16px}
+  nav a.n{display:inline}
+  .logo img{height:38px}
+  header .btn{font-size:.9rem}
+  .hero{padding:40px 0 60px}
+  .hero .grid{grid-template-columns:1.05fr .95fr;align-items:center}
+  .hero h1{font-size:2.3rem}
+  .hero .ph{width:100%}
+  .list{grid-template-columns:1fr 1fr;gap:16px 22px}
+  .panel{padding:44px 40px}
+  .steps-sec .top{grid-template-columns:1.1fr .9fr;align-items:center}
+  .steps{grid-template-columns:repeat(4,1fr)}
+  .values .grid,.greet .grid,.fee .grid{grid-template-columns:1fr 1fr;align-items:center}
+  .greet .ph{order:2}
+  footer .grid{grid-template-columns:auto 1fr 1fr;align-items:start;gap:40px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="TAITAI SUPPORT トップへ"><img src="images/logo.png" alt="TAITAI SUPPORT" width="640" height="146"></a>
+    <nav>
+      <a class="n" href="#topics">ご相談内容</a>
+      <a class="n" href="#support">サポートについて</a>
+      <a class="btn line-link" href="#line"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>公式LINEへ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <h1>フィリピンのお困りごとに、<br>頼れるアドバイザー。</h1>
+        <p class="sub">個人の方も、個人事業主・企業の方も。</p>
+        <div class="cta"><a class="btn line-link" href="#line"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>詳しくは公式LINEへ<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <!-- 太山さんが「top_clark.jpg」（クラーク）を選んだら src を images/top_clark.jpg・width="1600" height="1200"・alt を「クラークのパレードグラウンド」にし、下の footer の写真クレジット行のコメントを外す -->
+      <div class="ph cut"><img src="images/top.webp" alt="フィリピンの街並み（教会とジプニー）" width="640" height="696"></div>
+    </div>
+  </section>
+
+  <section class="topics" id="topics">
+    <div class="wrap">
+      <h2>ご相談いただけること<span class="bar"></span></h2>
+      <div class="list">
+        <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="12" width="4" height="8" rx="1.5"/><rect x="10" y="8" width="4" height="12" rx="1.5"/><rect x="16" y="4" width="4" height="16" rx="1.5"/></svg></span><h3>事業進出</h3></div>
+        <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M21.5 15.2v-1.8l-8-5V3.6a1.5 1.5 0 0 0-3 0v4.8l-8 5v1.8l8-2.5v5.1l-2.2 1.6V21l3.7-1 3.7 1v-1.6l-2.2-1.6v-5.1z"/></svg></span><h3>視察・研修</h3></div>
+        <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.4 1.3 4.5 3.4 6L4.6 21l4.3-2.4c1 .3 2 .4 3.1.4 5.5 0 10-3.6 10-8s-4.5-8-10-8zM7.5 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg></span><h3>通訳・現地とのやり取り</h3></div>
+        <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm1.5 5v1.8h7V7zm0 4v1.8h7V11zm0 4v1.8h5V15z"/></svg></span><h3>市場調査</h3></div>
+        <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3 2 11.5h3V21h5.5v-5.5h3V21H19v-9.5h3z"/></svg></span><h3>不動産売却の相談</h3></div>
+        <div class="item"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.2"/><circle cx="5.5" cy="9" r="2.4"/><circle cx="18.5" cy="9" r="2.4"/><path d="M6 20v-2.5C6 14.5 8.7 12 12 12s6 2.5 6 5.5V20zM1 19v-1.5C1 15.3 2.8 13.5 5 13.2c-.8 1.2-1.2 2.6-1.2 4.1V19zm22 0h-2.8v-1.7c0-1.5-.4-2.9-1.2-4.1 2.2.3 4 2.1 4 4.3z"/></svg></span><h3>人とのトラブルの相談</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-sec" id="support">
+    <div class="wrap">
+      <div class="panel">
+        <div class="top">
+          <div class="txt">
+            <h2>調べる。整理する。<br>次の一歩を、一緒に。<span class="bar"></span></h2>
+            <p class="lead">ご相談内容を調べ、必要な情報と課題を整理。<br class="pc">解決に向けた段取りを、一緒に組み立てます。</p>
+            <p class="lead">自社で支援できることはサポートし、<br class="pc">専門的な判断が必要なことは専門家へつなぎます。</p>
+          </div>
+          <div class="ph b2"><div class="img"><img src="images/support.webp" alt="海辺の高層ビル群" width="440" height="357"></div></div>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="no">01</span><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.4 1.3 4.5 3.4 6L4.6 21l4.3-2.4c1 .3 2 .4 3.1.4 5.5 0 10-3.6 10-8s-4.5-8-10-8zM7.5 12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm4.5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg><h3>相談</h3></li>
+          <li class="step"><span class="no">02</span><svg viewBox="0 0 24 24"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm1.5 5v1.8h7V7zm0 4v1.8h7V11zm0 4v1.8h5V15z"/></svg><h3>調査・整理</h3></li>
+          <li class="step"><span class="no">03</span><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2zM9 19h6v1.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 20.5z"/></svg><h3>段取りの提案</h3></li>
+          <li class="step"><span class="no">04</span><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.2"/><circle cx="5.5" cy="9" r="2.4"/><circle cx="18.5" cy="9" r="2.4"/><path d="M6 20v-2.5C6 14.5 8.7 12 12 12s6 2.5 6 5.5V20zM1 19v-1.5C1 15.3 2.8 13.5 5 13.2c-.8 1.2-1.2 2.6-1.2 4.1V19zm22 0h-2.8v-1.7c0-1.5-.4-2.9-1.2-4.1 2.2.3 4 2.1 4 4.3z"/></svg><h3>自社支援・<br>専門家へ</h3></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="values">
+    <div class="wrap grid">
+      <div class="ph cut"><img src="images/values.webp" alt="教会のある広場" width="640" height="540"></div>
+      <div>
+        <h2>私たちが大切にしていること<span class="bar"></span></h2>
+        <p class="big">日本とフィリピンをつなぐ。</p>
+        <p class="lead">一人ひとりの挑戦を確かな一歩に変え、<br>三方よしの未来をつくる。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="greet">
+    <div class="wrap">
+      <div class="panel grid">
+        <div>
+          <h2>フィリピンを、<br>好きになっていただきたい。<span class="bar"></span></h2>
+          <p class="lead">フィリピンにルーツを持つ私にとって、この国は大切な存在です。仕事や暮らしのお手伝いを通じて、皆さまにもフィリピンをもっと身近に感じていただけたら嬉しく思います。</p>
+          <p class="sign">グループ代表者　鈴木太山</p>
+        </div>
+        <div class="ph cut"><img src="images/greeting.webp" alt="ボートの浮かぶ海辺" width="640" height="503"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fee">
+    <div class="wrap grid">
+      <div class="ph"><div class="img"><img src="images/fee.webp" alt="海の見えるテラス" width="460" height="234"></div></div>
+      <div>
+        <h2>料金は、ご相談の内容に合わせて。</h2>
+        <p class="lead">必要な時間・手間・対応内容によって異なります。<br class="pc">詳しくは公式LINEへ。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="line">
+    <div class="in">
+      <h2>フィリピンを、もっと身近に。</h2>
+      <a class="btn white line-link" href="#line"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>詳しくは公式LINEへ<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap grid">
+    <a class="logo" href="#top" aria-label="TAITAI SUPPORT トップへ"><img src="images/logo.png" alt="TAITAI SUPPORT" width="640" height="146"></a>
+    <dl>
+      <div><dt>運営会社</dt><dd>TAITAIサポート株式会社</dd></div>
+      <div><dt>所在地（両社共通）</dt><dd>〒163-1302 東京都新宿区西新宿6丁目5番1号<br>新宿アイランドタワー2階</dd></div>
+    </dl>
+    <dl>
+      <div><dt>関連会社</dt><dd>TAITAI株式会社</dd></div>
+    </dl>
+  </div>
+  <div class="wrap"><p class="copy">© TAITAI SUPPORT Co., Ltd.</p>
+  <!-- top_clark.jpg を使うときだけ下のコメントを外す（CC BY-SA 4.0 は表記が必須）
+  <p class="credit">写真：Ralff Nestor Nacor／Wikimedia Commons（CC BY-SA 4.0）</p>
+  --></div>
+</footer>
+
+<script>
+  // 公式LINEの友だち追加URLが決まったらここに入れる（例：https://lin.ee/xxxx）
+  const LINE_URL = "https://lin.ee/GaQpPAA";
+  if (LINE_URL) document.querySelectorAll(".line-link").forEach(a => { a.href = LINE_URL; a.target = "_blank"; a.rel = "noopener"; });
+</script>
+
+</body></html>
