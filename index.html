@@ -140,6 +140,17 @@ footer dd{margin:6px 0 0;font-size:.86rem;color:var(--gray);line-height:1.7}
 footer .copy{margin-top:26px;font-size:.72rem;color:var(--gray)}
 footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
 
+/* よくある質問（2026-10-26 黒田・ニコNo1825） */
+.faq{padding:0 0 48px}
+.faq .qa{margin-top:22px;display:grid;gap:10px}
+.faq details{background:var(--pill);border-radius:18px;padding:0 18px}
+.faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:.95rem;padding:14px 26px 14px 0;position:relative;line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:12px;color:var(--blue);font-size:1.2rem;font-weight:700}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--gray);font-size:.92rem;line-height:1.9;padding:0 0 16px}
+.faq details a{color:var(--blue);word-break:break-all}
+
 /* PC（あとで仕上げる。今は崩れない程度） */
 @media (min-width:760px){
   body{font-size:16px}
@@ -169,6 +180,7 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
     <nav>
       <a class="n" href="#topics">ご相談内容</a>
       <a class="n" href="#support">サポートについて</a>
+      <a class="n" href="#faq">よくある質問</a>
       <a class="btn line-link" href="#line"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>公式LINEへ</a>
     </nav>
   </div>
@@ -252,6 +264,25 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
       <div>
         <h2>料金は、ご相談の内容に合わせて。</h2>
         <p class="lead">必要な時間・手間・対応内容によって異なります。<br class="pc">詳しくは公式LINEへ。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- よくある質問：2026-10-26 黒田（下書き「よくある質問（会社全体）」のQ1・2・3・4・7・9・14・17）。公開は太山さんのOK後 -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <h2>よくある質問<span class="bar"></span></h2>
+      <div class="qa">
+        <details><summary>どんなことを相談できますか？</summary><p>フィリピンにお持ちの不動産の売却・管理・書類・現地との連絡、フィリピンでの会社設立や事業の始め方、会社の研修のご相談などです。まずはお困りごとを一言お聞かせください。</p></details>
+        <details><summary>相談はどこからできますか？</summary><p><a class="line-link" href="https://lin.ee/GaQpPAA">公式LINE</a>からお送りください。内容を確かめて担当からご連絡します。</p></details>
+        <!-- Q3：初回Zoom無料・目安30分は太山さんのOK待ち（【要確認】）。OKが出たら、このコメントの始めと「Q3ここまで」の行の終わりの記号を外す
+        <details><summary>初回の相談にお金はかかりますか？</summary><p>初回のZoom（目安30分）は無料で、お困りごとを伺い、進め方をご説明します。</p></details>
+        Q3ここまで -->
+        <details><summary>その後の相談や手続きの費用は？</summary><p>内容によって変わります。始める前に、内容・費用・条件をご説明し、ご了承いただいてから進めます。</p></details>
+        <details><summary>SMDCの物件を新しく買えますか？</summary><p>SMDCの新規販売は終了しています。すでにご購入のお客様のお世話は続けています。</p></details>
+        <details><summary>物件を売りたいです。</summary><p>ご希望とお困りのことをお聞かせください。手続きと費用を整理してご案内します。売れる時期や価格はお約束できません。</p></details>
+        <details><summary>会社の研修をフィリピンで行えますか？</summary><p>旅行の販売ではなく、3か月などのコンサルの中で、現地での研修や交流会を組み込む形でお手伝いしています。目的・人数・時期を伺ってご提案します。</p></details>
+        <details><summary>会社はどこにありますか？</summary><p>〒163-1302 東京都新宿区西新宿6丁目5番1号 新宿アイランドタワー2階（TAITAIサポート株式会社・TAITAI株式会社）</p></details>
       </div>
     </div>
   </section>
