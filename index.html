@@ -247,6 +247,11 @@ footer .credit{margin-top:8px;font-size:.68rem;color:var(--gray)}
 .faq summary .q,.faq details p .a{color:var(--blue);font-weight:700;margin-right:6px}
 footer .credit a{color:var(--gray)}
 @media(min-width:760px){.caselist{grid-template-columns:1fr 1fr;column-gap:40px}}
+.fab{position:fixed;right:max(14px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:20;display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;padding:7px 18px 7px 7px;border-radius:999px;box-shadow:0 8px 22px rgba(26,86,214,.35);opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .25s,transform .25s}
+.fab.on{opacity:1;transform:none;pointer-events:auto}
+.fab .ln{width:32px;height:32px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.fab .ln svg{width:21px;height:21px}
+@media (prefers-reduced-motion:reduce){.fab{transition:none}}
 </style>
 </head>
 <body>
@@ -362,6 +367,14 @@ footer .credit a{color:var(--gray)}
 </div>
 </footer>
 
+<a class="fab line-link" id="fab" href="https://lin.ee/GaQpPAA" target="_blank" rel="noopener" aria-label="公式LINEで相談する"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>LINEで相談</a>
+<script>
+  (function(){var f=document.getElementById("fab"),h=document.querySelector(".hero .cta"),b=document.getElementById("line");
+  if(!("IntersectionObserver" in window)){f.classList.add("on");return;}
+  var heroVis=true,bandVis=false;function u(){f.classList.toggle("on",!heroVis&&!bandVis);}
+  new IntersectionObserver(function(e){heroVis=e[0].isIntersecting;u();}).observe(h);
+  new IntersectionObserver(function(e){bandVis=e[0].isIntersecting;u();}).observe(b);})();
+</script>
 <script>
   const LINE_URL = "https://lin.ee/GaQpPAA";
   if (LINE_URL) document.querySelectorAll(".line-link").forEach(a => { a.href = LINE_URL; a.target = "_blank"; a.rel = "noopener"; });
