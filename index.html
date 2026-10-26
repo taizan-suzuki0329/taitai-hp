@@ -252,6 +252,16 @@ footer .credit a{color:var(--gray)}
 .fab .ln{width:32px;height:32px;border-radius:50%;background:#fff;display:grid;place-items:center}
 .fab .ln svg{width:21px;height:21px}
 @media (prefers-reduced-motion:reduce){.fab{transition:none}}
+.who-line{display:flex;align-items:center;gap:12px}
+.who-line .tt{width:52px;height:auto;flex:none}
+.sns{padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid var(--pill);text-align:center}
+.sns-h{font-size:.85rem;font-weight:700;color:var(--navy)}
+.sns-row{display:flex;justify-content:center;gap:12px;margin-top:12px}
+.sns-btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.92rem;color:#fff;border-radius:999px;padding:10px 20px}
+.sns-btn svg{width:20px;height:20px}
+.sns-btn.ig{background:linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF)}
+.sns-btn.tk{background:#111}
+footer{padding-bottom:90px}
 </style>
 </head>
 <body>
@@ -278,7 +288,7 @@ footer .credit a{color:var(--gray)}
         <div class="cta"><a class="btn line-link" href="https://lin.ee/GaQpPAA" target="_blank" rel="noopener"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>まずはLINEで一言（無料）<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         <p class="note">軽いご質問は無料。返信は休業日を除く2営業日が目安です。</p>
         <a class="sublink" href="#fee">くわしい初回相談（10,000円）について →</a>
-        <p class="who-line">お返事するのは、<b>代表　鈴木太山</b>です。</p>
+        <p class="who-line"><img class="tt" src="images/taitai.webp" alt="タイタイのキャラクター" width="204" height="320"><span>お返事するのは、<b>代表　鈴木太山</b>です。</span></p>
       </div>
       <div><div class="ph cut"><img src="images/top_clark.jpg" alt="フィリピン・クラークの街の看板" width="1600" height="1200"></div></div>
     </div>
@@ -356,25 +366,18 @@ footer .credit a{color:var(--gray)}
 </main>
 
 <footer>
+  <div class="wrap sns"><p class="sns-h">公式SNS</p><div class="sns-row"><a class="sns-btn ig" href="#" onclick="return false" aria-label="Instagram（準備中）"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg><span>Instagram</span></a><a class="sns-btn tk" href="#" onclick="return false" aria-label="TikTok（準備中）"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 3h-3.3v12.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9a6.2 6.2 0 1 0 5.3 6.2V9.1a7.6 7.6 0 0 0 4.4 1.4V7.2a4.4 4.4 0 0 1-4.4-4.2z"/></svg><span>TikTok</span></a></div></div>
   <div class="wrap grid">
     <a class="logo" href="#top" aria-label="TAITAI SUPPORT トップへ"><img src="images/logo.png" alt="TAITAI SUPPORT" width="640" height="146"></a>
     <dl>
       <div><dt>運営会社</dt><dd>TAITAIサポート株式会社（関連会社：TAITAI株式会社）<br>〒163-1302 東京都新宿区西新宿6丁目5番1号 新宿アイランドタワー2階</dd></div>
-      <div><dt>代表者</dt><dd>鈴木太山</dd></div>
     </dl>
   </div>
   <div class="wrap"><p class="credit">一番上の写真：Ralff Nestor Nacor（<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" rel="noopener" target="_blank">CC BY-SA 4.0</a>）</p><p class="copy">© TAITAI SUPPORT Co., Ltd.</p>
 </div>
 </footer>
 
-<a class="fab line-link" id="fab" href="https://lin.ee/GaQpPAA" target="_blank" rel="noopener" aria-label="公式LINEで相談する"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>LINEで相談</a>
-<script>
-  (function(){var f=document.getElementById("fab"),h=document.querySelector(".hero .cta"),b=document.getElementById("line");
-  if(!("IntersectionObserver" in window)){f.classList.add("on");return;}
-  var heroVis=true,bandVis=false;function u(){f.classList.toggle("on",!heroVis&&!bandVis);}
-  new IntersectionObserver(function(e){heroVis=e[0].isIntersecting;u();}).observe(h);
-  new IntersectionObserver(function(e){bandVis=e[0].isIntersecting;u();}).observe(b);})();
-</script>
+<a class="fab on line-link" id="fab" href="https://lin.ee/GaQpPAA" target="_blank" rel="noopener" aria-label="公式LINEで相談する"><span class="ln"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#1A56D6" d="M12 3.5C6.8 3.5 2.6 6.9 2.6 11.1c0 3.8 3.3 6.9 7.8 7.5.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5s5.3-3.1 7.2-5.4c1.3-1.4 2-2.9 2-4.7 0-4.2-4.2-7.6-9.4-7.6z"/><text x="12" y="13.2" fill="#fff" font-size="5.2" font-weight="700" text-anchor="middle" font-family="Arial">LINE</text></svg></span>LINEで相談</a>
 <script>
   const LINE_URL = "https://lin.ee/GaQpPAA";
   if (LINE_URL) document.querySelectorAll(".line-link").forEach(a => { a.href = LINE_URL; a.target = "_blank"; a.rel = "noopener"; });
