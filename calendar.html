@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>営業カレンダー｜Zoom相談のご予約｜TAITAIサポート株式会社</title>
+<meta name="description" content="Zoom相談（45分・税込10,000円）のご予約は、空いている日から選べます。受付 9:00〜18:00、土日・祝日はお休み。">
+<style>
+:root{--blue:#1A56D6;--blue-d:#1446B4;--navy:#14213D;--gray:#1F2937;--pale:#EEF4FB;--pill:#EAF0F8;--line:#DCE4F0;--white:#fff;--off:#E9EDF3;--off-t:#8A94A6;--ng:#D93025;--font:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--navy);font-family:var(--font);font-size:16px;line-height:1.8}
+.wrap{max-width:540px;margin:0 auto;padding:0 0 110px}
+.hd{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px;padding:22px 14px 6px;background:linear-gradient(180deg,#EEF4FB,#fff)}
+.hd .ch{height:120px;width:auto;justify-self:center}
+.hd .ttl{text-align:center;line-height:1.3}
+.hd .en{font-size:28px;font-weight:800;letter-spacing:.06em;color:#8C7A68}
+.hd .ym{font-size:19px;font-weight:800;color:#8C7A68;margin-top:6px}
+.hd .ja{font-size:19px;font-weight:800;color:#8C7A68;margin-top:4px}
+.guide{text-align:center;font-weight:800;font-size:15px;margin:10px 18px 0;color:var(--navy)}
+section{padding:18px 18px 6px}
+h2{font-size:18px;margin:0 0 10px;font-weight:800}
+.month{display:flex;align-items:baseline;gap:10px;margin:4px 0 8px}
+.month b{font-size:20px}
+.month span{font-size:12px;color:#5B6B85}
+/* 見本の表 */
+.cal{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed}
+.cal th{font-size:12px;font-weight:700;padding:2px 0;color:#5B6B85}
+.cal th.sun{color:var(--ng)} .cal th.sat{color:var(--blue)}
+.cal td{height:54px;vertical-align:top;border:1px solid var(--line);border-radius:8px;padding:4px 6px;font-size:13px;font-weight:700;background:#fff}
+.cal td .m{display:block;text-align:center;font-size:18px;line-height:1.1;margin-top:4px}
+.cal td.ok .m{color:var(--blue)}
+.cal td.ng .m{color:var(--ng)}
+.cal td.off{background:var(--off);color:var(--off-t);border-color:var(--off)}
+.cal td.off .m{font-size:14px;font-weight:700}
+.cal td{text-align:center}
+.cal td.empty{border:0;background:transparent}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin:8px 0 2px;color:var(--gray)}
+.legend i{font-style:normal;font-weight:800;margin-right:3px}
+.legend .ok{color:var(--blue)} .legend .ng{color:var(--ng)} .legend .offt{color:var(--off-t)}
+.legend{justify-content:center}
+.mnav{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px 0 8px}
+.mnav b{font-size:17px;color:#8C7A68}
+.mnav button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--blue);font-size:20px;font-weight:800;line-height:1;cursor:pointer}
+.mnav button:disabled{opacity:.3;cursor:default}
+.cal td.ok{cursor:pointer}
+/* 予約の実物（TimeRex）を入れる所 */
+.book{margin:10px 0 4px;border:2px dashed var(--line);border-radius:12px;padding:14px;background:var(--pale);font-size:14px;color:var(--gray)}
+.book iframe{width:100%;height:720px;border:0;border-radius:10px;background:#fff}
+/* 流れ */
+.flow{display:flex;align-items:center;justify-content:space-between;gap:4px;margin:6px 0 10px}
+.flow .st{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px}
+.flow .n{width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;flex:none}
+.flow .ar{color:#9AA6B8;font-weight:700}
+.box{background:var(--pale);border-radius:12px;padding:14px 16px;margin:8px 0 10px}
+.box .big{font-size:17px;font-weight:800;margin:0 0 6px}
+.box p{margin:2px 0;font-size:14px}
+.note{font-size:12px;color:#5B6B85;margin:4px 0 0}
+.cta{display:block;text-align:center;background:#06C755;color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:14px;margin:14px 18px 6px;font-size:16px}
+.cta.blue{background:var(--blue)}
+footer{padding:22px 18px 16px;text-align:center;font-size:12px;color:#5B6B85;line-height:1.7}
+.fab{position:fixed;left:0;right:0;bottom:0;padding:10px 14px max(10px,env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+.fab a{display:block;text-align:center;background:#06C755;color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:13px;font-size:16px}
+.fab small{display:block;text-align:center;font-size:11px;color:#5B6B85;margin-top:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hd">
+  <img class="ch" src="images/char_moko.png" alt="" width="343" height="420">
+  <div class="ttl"><div class="en">CALENDAR</div><div class="ym" id="ym">2026年11月</div><div class="ja">ご予約</div></div>
+  <img class="ch" src="images/char_rocky.png" alt="" width="269" height="420">
+</div>
+<p class="guide">日を選ぶと、申し込みへ進みます</p>
+
+<section>
+  <div class="mnav"><button type="button" id="prev" aria-label="前の月">‹</button><b id="mtitle"></b><button type="button" id="next" aria-label="次の月">›</button></div>
+  <table class="cal" aria-label="営業カレンダー">
+    <thead><tr><th class="sun">日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th class="sat">土</th></tr></thead>
+    <tbody id="cbody"></tbody>
+  </table>
+  <div class="legend"><span><i class="ok">○</i>空いています</span><span><i class="ng">×</i>埋まっています</span><span><i class="offt">休</i>お休み</span></div>
+
+  <!-- ここに TimeRex の予約カレンダーを入れる。タイタイが TimeRex で作ったページのURLを下の src に入れる -->
+  <div class="book" id="book">
+    <b>ここに予約カレンダー（TimeRex）が入ります。</b><br>
+    タイタイの予定と連動して、埋まった日とお休みは自動で選べなくなります。<br>
+    <span class="note">※ 準備中。TimeRexのページができたら、この枠に差し替えます。</span>
+    <!-- <iframe src="https://timerex.net/s/XXXXX/YYYYY" title="Zoom相談のご予約"></iframe> -->
+  </div>
+</section>
+
+<section>
+  <h2>相談予約の流れ</h2>
+  <div class="flow">
+    <span class="st"><span class="n">1</span>日を選ぶ</span><span class="ar">→</span>
+    <span class="st"><span class="n">2</span>時間を選ぶ</span><span class="ar">→</span>
+    <span class="st"><span class="n">3</span>LINEで確定</span>
+  </div>
+  <div class="box">
+    <p class="big">Zoom相談　45分・税込10,000円</p>
+    <p>受付時間　9:00〜18:00</p>
+    <p>お休み　土日・祝日</p>
+  </div>
+  <p class="note">日時を選んだあと、公式LINEで「予約しました」と一言ください。お支払い（銀行振込）の流れと、Zoomのリンクをご案内します。</p>
+</section>
+
+<a class="cta" href="https://lin.ee/ZaDcexp" target="_blank" rel="noopener">LINEでご相談</a>
+
+<footer>日本とフィリピンをつなぎ、一人ひとりの挑戦を確かな一歩に変え、三方よしの未来をつくる。<br>© TAITAI SUPPORT Co., Ltd.</footer>
+</div>
+<div class="fab"><a href="https://lin.ee/ZaDcexp" target="_blank" rel="noopener">LINEでご相談</a><small>軽いご相談は無料です</small></div>
+<script>
+(function(){
+  // 表示する月（必要になったら足す）
+  var MONTHS=[[2026,11],[2026,12]];
+  // お休み：土日＋祝日。年末年始の休みは未確認（決まったら足す）
+  var HOLIDAY={'2026-11-03':'文化の日','2026-11-23':'勤労感謝の日'};
+  // 埋まっている日（見本。本物はTimeRexと連動）
+  var FULL={'2026-11-12':1,'2026-11-13':1};
+  var idx=0;
+  function pad(n){return (n<10?'0':'')+n}
+  function render(){
+    var y=MONTHS[idx][0], m=MONTHS[idx][1];
+    document.getElementById('mtitle').textContent=y+'年'+m+'月';
+    document.getElementById('ym').textContent=y+'年'+m+'月';
+    var first=new Date(y,m-1,1), days=new Date(y,m,0).getDate();
+    var html='', dow=first.getDay(), d=1;
+    for(var r=0;r<6 && d<=days;r++){
+      html+='<tr>';
+      for(var c=0;c<7;c++){
+        if((r===0&&c<dow)||d>days){html+='<td class="empty"></td>';continue;}
+        var key=y+'-'+pad(m)+'-'+pad(d);
+        var off=(c===0||c===6||HOLIDAY[key]);
+        if(off){html+='<td class="off">'+d+'<span class="m">休</span></td>';}
+        else if(FULL[key]){html+='<td class="ng">'+d+'<span class="m">×</span></td>';}
+        else{html+='<td class="ok" data-d="'+key+'">'+d+'<span class="m">○</span></td>';}
+        d++;
+      }
+      html+='</tr>';
+    }
+    document.getElementById('cbody').innerHTML=html;
+    document.getElementById('prev').disabled=(idx===0);
+    document.getElementById('next').disabled=(idx===MONTHS.length-1);
+  }
+  document.getElementById('prev').onclick=function(){if(idx>0){idx--;render();}};
+  document.getElementById('next').onclick=function(){if(idx<MONTHS.length-1){idx++;render();}};
+  // 日を押したら申し込み（TimeRexの枠）へ
+  document.getElementById('cbody').addEventListener('click',function(e){
+    var td=e.target.closest('td.ok'); if(!td) return;
+    var b=document.getElementById('book'); if(b){b.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+  render();
+})();
+</script>
+</body></html>
