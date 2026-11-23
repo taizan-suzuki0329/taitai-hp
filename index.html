@@ -13,6 +13,10 @@
 <meta property="og:type" content="website">
 <link rel="alternate" hreflang="ja" href="https://taitai-support.com/">
 <link rel="alternate" hreflang="en" href="https://taitai-support.com/en/">
+<link rel="alternate" hreflang="es" href="https://taitai-support.com/es/">
+<link rel="alternate" hreflang="ko" href="https://taitai-support.com/ko/">
+<link rel="alternate" hreflang="tl" href="https://taitai-support.com/tl/">
+<link rel="alternate" hreflang="zh-Hans" href="https://taitai-support.com/zh/">
 <link rel="alternate" hreflang="x-default" href="https://taitai-support.com/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "TAITAIサポート株式会社", "alternateName": "TAITAI SUPPORT Co., Ltd.", "url": "https://taitai-support.com/", "logo": "https://taitai-support.com/images/logo.png", "address": {"@type": "PostalAddress", "postalCode": "163-1302", "addressRegion": "東京都", "addressLocality": "新宿区", "streetAddress": "西新宿6丁目5番1号 新宿アイランドタワー2階", "addressCountry": "JP"}, "areaServed": ["JP", "PH"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "相談はどこからできますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式LINEからお送りください。休業日（土日祝）を除く3日以内に、一次返信します。"}}, {"@type": "Question", "name": "無料と有料の境目はどこですか？", "acceptedAnswer": {"@type": "Answer", "text": "LINEでのヒアリングと、ワンポイントアドバイス（PDFでお送りします）までは無料です。45分のZoom相談からは有料です。有料になる前に、必ずご案内します。"}}, {"@type": "Question", "name": "料金はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "LINEでのヒアリングとワンポイントアドバイスまでは無料です。45分のZoom相談は有料で、税込10,000円です。その後の費用は、内容に応じて事前にご案内します。"}}, {"@type": "Question", "name": "人には言いづらいことも相談できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。まずは差し支えない範囲で、概要をお聞かせください。守秘義務はきちんと守ります。"}}, {"@type": "Question", "name": "弁護士など専門家を紹介してもらえますか？", "acceptedAnswer": {"@type": "Answer", "text": "現地の専門家のご紹介は無料です。専門家へのご依頼の費用は、専門家へ直接お支払いいただきます。"}}, {"@type": "Question", "name": "すでに物件を購入しています。手続きの相談はどこへ？", "acceptedAnswer": {"@type": "Answer", "text": "お支払い・書類などの手続きも、公式LINEで受け付けています。"}}]}</script>
@@ -44,7 +48,7 @@ nav{display:flex;align-items:center;gap:10px}
 nav a.n{display:none;color:var(--navy);text-decoration:none;font-size:.9rem;font-weight:500}
 header .btn{font-size:.8rem;padding:5px 14px 5px 5px;gap:8px;box-shadow:none;white-space:nowrap}
 header .btn .ln{width:26px;height:26px}header .btn .ln svg{width:17px;height:17px}
-.lang{display:flex;gap:4px;flex:none}.lang a{font-size:.78rem;font-weight:700;line-height:1;padding:7px 10px;border-radius:999px;border:1px solid var(--line);color:var(--navy);text-decoration:none;white-space:nowrap}.lang a[aria-current]{background:var(--navy);border-color:var(--navy);color:#fff}
+.lang{position:relative;flex:none}.lang summary{list-style:none;cursor:pointer;font-size:.8rem;font-weight:700;line-height:1;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--navy);background:#fff;white-space:nowrap}.lang summary::-webkit-details-marker{display:none}.lang[open] summary{background:var(--navy);color:#fff;border-color:var(--navy)}.lang .menu{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.12);padding:6px;min-width:150px;z-index:50;display:flex;flex-direction:column}.lang .menu a{display:block;padding:10px 12px;border-radius:10px;font-size:.9rem;color:var(--ink,#1f2328);text-decoration:none;white-space:nowrap}.lang .menu a:hover{background:#eef3fb}.lang .menu a[aria-current]{font-weight:800;color:var(--navy)}
 /* メイン */
 .hero{position:relative;padding:28px 0 56px}
 .hero .grid{display:grid;gap:26px}
@@ -179,7 +183,7 @@ footer .pp{margin-top:14px;font-size:.84rem;color:var(--gray);line-height:1.7}
       <a class="n" href="#fee">料金の考え方</a>
       <a class="n" href="#faq">よくある質問</a>
     </nav>
-    <div class="lang" aria-label="Language"><a href="index.html" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="en/index.html" hreflang="en" lang="en">English</a></div>
+    <details class="lang"><summary aria-label="Language">🌐 日本語 ▾</summary><div class="menu"><a href="index.html" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="en/index.html" hreflang="en" lang="en">English</a><a href="es/index.html" hreflang="es" lang="es">Español</a><a href="ko/index.html" hreflang="ko" lang="ko">한국어</a><a href="tl/index.html" hreflang="tl" lang="tl">Tagalog</a><a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans">中文</a></div></details>
   </div>
 </header>
 
